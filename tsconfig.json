@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist/app",
+    "baseUrl": "./src",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@common/*": [
+        "commons/*"
+      ],
+      "@configs/*": [
+        "commons/configs/*"
+      ],
+      "@database/*": [
+        "database/*"
+      ],
+      "@middlewares/*": [
+        "middlewares/*"
+      ],
+      "@modules/*": [
+        "modules/*"
+      ],
+      "@pipes/*": [
+        "pipes/*"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ],
+      "@interceptors/*": [
+        "interceptors/*"
+      ]
+    }
+  }
+}
