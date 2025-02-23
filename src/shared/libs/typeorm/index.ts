@@ -308,16 +308,6 @@ SelectQueryBuilder.prototype.andWhere = function <Entity>(
     }
   }
 
-  // const colMeta = this.expressionMap.aliases // Get alias entity from here
-  // console.log('🚀 ~ where:', where); // split by dot (.) to get alias
-  // console.log(
-  //   '🚀 ~ expressionMap:',
-  //   colMeta.query ? colMeta.query('abc') : "Can't run", // Get virtual col query expression from here
-  // );
-  /**
-   * DONE: Fill query to virtual column place to make it able to where by virtual column
-   * TODO: Improve to make it able to where by virtual column with multiple dots or using SQL functions or other cases
-   */
   this.expressionMap.wheres.push({
     type: 'and',
     condition: this.getWhereCondition(newWhere),
